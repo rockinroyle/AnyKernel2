@@ -1,10 +1,10 @@
 # AnyKernel2 Ramdisk Mod Script
 # osm0sis @ xda-developers
-#aospdK and tweaks by rockinroyle @ xda-developers
+#NoobK and tweaks by rockinroyle @ xda-developers
 
 ## AnyKernel setup
 # EDIFY properties
-kernel.string=Shamu-Stock
+kernel.string=NoobK-7.1.2
 do.devicecheck=1
 do.initd=0
 do.modules=0
