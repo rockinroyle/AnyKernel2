@@ -1,9 +1,9 @@
 # AnyKernel2 Ramdisk Mod Script
 # osm0sis @ xda-developers
-#NoobK and tweaks by rockinroyle @ xda-developers
+# NoobK tweaks by rockinroyle @ xda-developers
 
-## AnyKernel setup
-# EDIFY properties
+# begin properties
+properties() {
 kernel.string=NoobK-7.1.2
 do.devicecheck=1
 do.initd=0
@@ -36,8 +36,8 @@ dump_boot;
 
 # begin ramdisk changes
 
-# init.aospdK.rc
-insert_line init.shamu.rc "init.noob.shamu.rc" after "import init.shamu.diag.rc" "init.noob.shamu.rc"
+# init.noob.rc
+insert_line init.shamu.rc "init.noob.rc" after "import init.shamu.diag.rc" "init.noob.rc"
 
 replace_section init.shamu.rc "service mpdecision" "disabled" "#service mpdecision /system/bin/mpdecision --avg_comp\n#   class main\n#   user root\n#   group root readproc\n#    writepid /dev/cpuset/system-background/tasks\n#   disabled";
 
