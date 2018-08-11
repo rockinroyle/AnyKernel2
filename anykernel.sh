@@ -14,7 +14,7 @@ device.name2=Shamu
 device.name3=
 device.name4=
 device.name5=
-'; } # end properties
+ } # end properties
 
 # shell variables
 block=/dev/block/platform/msm_sdcc.1/by-name/boot;
